@@ -19,4 +19,4 @@ jobs:
     steps:
       - checkout
 
-      - run: echo "hello worldddddddd!!!"
+      - run: echo "hello world!!!"
