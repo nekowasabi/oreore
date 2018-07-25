@@ -20,4 +20,4 @@ jobs:
       - checkout
       - run: composer install --dev --no-interaction
       - run: echo "hello world!!!"
-      - run: vendor/bin/phpcbf index.php
+      - run: vendor/bin/phpcbf --standard=PSR2 index.php
