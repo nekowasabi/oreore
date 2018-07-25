@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/php:7.1.5-browsers
+      - image: circleci/php:latest
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -20,4 +20,4 @@ jobs:
       - checkout
       - run: composer install --dev --no-interaction
       - run: echo "hello world!!!"
-      - run: phpunit
+      - run: vendor/bin/phpunit
